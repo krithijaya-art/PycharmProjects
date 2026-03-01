@@ -34,17 +34,20 @@ while True:
     elif choice == "3":
         if playlist:
             print("\nYour Playlist:")
-            for song, artist in playlist.items():
-                print(f"- {song} by {artist}")
+            for title, artist in playlist.items():
+                print(f"- {title} by {artist}")
         else:
             print("Your playlist is empty!")
 
     elif choice == "4":
-        search = input("Enter song title to search: ").strip()
+        search = input("Enter song title to search: ").strip().lower()
 
-        if search in playlist:
-            print(f"'{search}' is in your playlist, sung by {playlist[search]}.")
-        else:
+        found = False
+        for title, artist in playlist.items():
+            if search in title.lower():
+                print(f"'{title}' is in your playlist, sung by {artist}.")
+                found = True
+        if not found:
             print("Song not found in the playlist!")
 
     elif choice == "5":

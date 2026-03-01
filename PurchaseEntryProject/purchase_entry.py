@@ -18,6 +18,6 @@ customer_profile = customer_details.copy()
 customer_profile.update(purchase_history)
 
 print(customer_profile)
---------------------------------------------
+
 customer_profile = customer_details.copy()
 customer_profile.update(purchase_history)

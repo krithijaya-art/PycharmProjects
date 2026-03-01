@@ -1,5 +1,13 @@
 # A program to censor certain words from a text
-
+'''
+Created on Jul 2, 2020
+@author: krithiga
+It is useful in data masking scenarios
+such as displaying partially hidden account numbers Banking Apps, email or phone number masking,
+or to prevent sensitive data exposure in logs and also to prevent security leaks in backend systems
+ while maintaining user recognition and privacy like PAN NUMBER, CREDIT CARD or AADHAR NUMBER
+ or for social media moderation, gaming chat filters & comment sections
+'''
 # Step 1: Define the text and the word to be censored
 text = input("Enter the text: ")
 censor_word = input("Enter the word to censor: ")

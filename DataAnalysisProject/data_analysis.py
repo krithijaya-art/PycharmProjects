@@ -1,4 +1,6 @@
 import numpy as np
+import os
+print(os.getcwd())
 
 
 data = np.loadtxt("amazon_data.csv", delimiter=",", skiprows=1, usecols=(1, 2, 3))

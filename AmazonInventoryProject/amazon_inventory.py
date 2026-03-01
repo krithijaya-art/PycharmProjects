@@ -20,7 +20,6 @@ nested_dict["key3"] = {
     "sub_key5": "value5",
     "sub_key6": "value6"
 }
------------------------------------------------
 
 amazon_inventory = {
     "Electronics": {
