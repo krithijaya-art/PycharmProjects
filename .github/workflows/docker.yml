@@ -17,4 +17,10 @@ jobs:
         run: docker build -t equipment-image ./EquipmentStatusTrackerProject
 
       - name: Run Container
-        run: docker run equipment-image
+        run: docker run equipment-image > output.txt
+
+      - name: Upload Output Artifact
+        users: actions/upload-artifact@v3
+        with:
+          name: equipment-output
+          path: output.txt
