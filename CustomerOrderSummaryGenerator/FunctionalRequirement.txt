@@ -1,0 +1,11 @@
+Store the customer’s name (string), order quantity (integer), and price per item (float) in variables. Calculate the total cost by multiplying quantity and price (after type casting if needed) and display the formatted summary with all details. Take screenshots of your code and output as proof.
+
+Questions for this assignment
+Show the Python code storing the customer’s name, quantity, and price per item with correct data types.
+
+Show the code performing type casting (if required) and calculating the total cost.
+
+Show the code displaying the formatted summary with the customer’s name, total cost, and thank-you message.
+
+Show the program output with correct formatting.
+

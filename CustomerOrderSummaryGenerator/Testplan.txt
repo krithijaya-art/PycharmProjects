@@ -1,0 +1,191 @@
+---
+
+# Test Plan — Customer Order Cost Calculator
+
+## 1. Test Plan ID
+
+COC-001
+
+---
+
+# 2. Test Objective
+
+To verify that the program correctly:
+
+* Stores **customer name**, **order quantity**, and **price per item** with correct data types.
+* Performs **type casting if required**.
+* Calculates **total order cost** using multiplication.
+* Displays a **formatted order summary** with customer details and total cost.
+
+---
+
+# 3. Feature Under Test
+
+Customer Order Cost Calculation using variables and type casting in
+Python.
+
+---
+
+# 4. Test Environment
+
+| Component  | Details                  |
+| ---------- | ------------------------ |
+| Language   | Python                   |
+| Execution  | Python Interpreter / IDE |
+| Input Type | Hardcoded variables      |
+
+---
+
+# 5. Test Data
+
+| Variable       | Data Type | Value   |
+| -------------- | --------- | ------- |
+| customer_name  | String    | "Alice" |
+| order_quantity | Integer   | 3       |
+| price_per_item | Float     | 25.50   |
+
+---
+
+# 6. Test Scenarios
+
+## Test Case 1 — Verify variable storage
+
+**Test Case ID:** COC-001-01
+
+**Description:**
+Verify that customer name, quantity, and price are stored with correct data types.
+
+**Steps**
+
+1. Declare variable `customer_name` as string.
+2. Declare variable `order_quantity` as integer.
+3. Declare variable `price_per_item` as float.
+
+**Expected Result**
+
+Variables should be stored as:
+
+```
+customer_name → str
+order_quantity → int
+price_per_item → float
+```
+
+---
+
+# Test Case 2 — Verify type casting and calculation
+
+**Test Case ID:** COC-001-02
+
+**Description:**
+Verify that total cost is calculated correctly.
+
+**Steps**
+
+1. Convert quantity to integer if needed using `int()`.
+2. Convert price to float if needed using `float()`.
+3. Multiply quantity and price.
+
+Formula:
+
+```
+total_cost = quantity * price_per_item
+```
+
+**Expected Result**
+
+```
+total_cost = 3 × 25.50
+total_cost = 76.5
+```
+
+---
+
+# Test Case 3 — Verify formatted output
+
+**Test Case ID:** COC-001-03
+
+**Description:**
+Verify that the program prints a properly formatted summary.
+
+**Steps**
+
+1. Print customer name.
+2. Print quantity ordered.
+3. Print price per item.
+4. Print total cost.
+5. Print thank-you message.
+
+**Expected Output Example**
+
+```
+Customer: Alice
+Quantity Ordered: 3
+Price per Item: 25.5
+Total Cost: 76.5
+Thank you for your order!
+```
+
+---
+
+# 7. Expected Program Output
+
+Example output:
+
+```
+Customer: Alice
+Quantity Ordered: 3
+Price per Item: 25.5
+Total Cost: 76.5
+Thank you for your order!
+```
+
+---
+
+# 8. Pass / Fail Criteria
+
+| Condition                                | Result |
+| ---------------------------------------- | ------ |
+| Variables stored with correct data types | PASS   |
+| Total cost calculation correct           | PASS   |
+| Output formatted clearly                 | PASS   |
+| Incorrect datatype or calculation        | FAIL   |
+
+---
+
+# 9. Evidence Required
+
+For submission:
+
+1. Screenshot of **Python code**.
+2. Screenshot of **program execution output**.
+3. Ensure the output matches expected results.
+
+---
+
+# 10. Possible Edge Test Cases (Optional QA Thinking)
+
+| Scenario         | Expected Behavior           |
+| ---------------- | --------------------------- |
+| quantity = 0     | Total cost = 0              |
+| price = 0        | Total cost = 0              |
+| price = negative | Should ideally be validated |
+
+---
+
+✅ This test plan shows understanding of:
+
+* **variables**
+* **data types**
+* **type casting**
+* **calculation logic**
+* **output verification**
+
+---
+
+| Test Case               | Input           | Expected Result              |
+| ----------------------- | --------------- | ---------------------------- |
+| Verify variable storage | Alice, 3, 25.50 | Stored as string, int, float |
+| Verify calculation      | 3 × 25.50       | Total = 76.50                |
+| Verify formatted output | Print summary   | Correct labels displayed     |
+| Verify decimal format   | price and total | Two decimal places           |

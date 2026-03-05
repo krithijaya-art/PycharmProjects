@@ -1,0 +1,1 @@
+You work for online store, and your task is to create a Python program that stores a customer’s name, order quantity, and price per item. You must use proper data types, perform type casting where needed, and generate a clear summary showing the customer’s name, total cost, and a thank-you message.

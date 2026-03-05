@@ -1,0 +1,13 @@
+Create and manipulate an array of seat numbers for a VIP row at a music festival using loops, slicing, operators, and decision-making.
+
+Questions for this requirement
+===============================
+Create an array of seat numbers 101–108 and print the total seats.
+
+A guest moves from seat 104 to 110. Update the array by replacing 104 with 110, then print the array.
+
+Show seat slices: first four seats, then last three seats.
+
+Mark reserved seats. Given reserved = array('i',[102,106]), loop through seats and print one line per seat: "Seat 101 - Reserved" or "Seat 101 - Free".
+
+Write a function next_available(start_seat, seats, reserved) that returns the first seat ≥ start_seat that is not reserved; print the result for start_seat = 105.
