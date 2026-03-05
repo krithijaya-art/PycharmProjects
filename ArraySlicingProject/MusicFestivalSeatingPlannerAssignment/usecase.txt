@@ -1,0 +1,3 @@
+You are working with the organizing team of a summer music festival in Spain. 
+The team uses arrays to store the seat numbers for VIP guests in a special row. 
+You need to manage this seating by arranging numbers, slicing for specific sections.

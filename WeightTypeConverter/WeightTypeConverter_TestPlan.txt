@@ -1,0 +1,131 @@
+---
+
+# Test Plan — Weight Type Converter
+
+## 1. Test Plan ID
+
+WT-001
+
+---
+
+## 2. Test Objective
+
+To verify that a **package weight stored as text (string)** is correctly converted to a **float data type** before being used in the shipping database system.
+
+---
+
+## 3. Feature Under Test
+
+Python data type conversion using:
+
+* `float()`
+* `type()`
+* `print()`
+
+---
+
+## 4. Test Environment
+
+* Language: Python
+* Execution environment: Local Python interpreter / IDE
+* Input type: String
+
+---
+
+## 5. Test Data
+
+| Test Variable       | Value   |
+| ------------------- | ------- |
+| package_weight_text | `"4.2"` |
+
+---
+
+# 6. Test Cases
+
+## Test Case 1 — Verify original data type
+
+**Test Case ID:** WT-001-01
+
+**Description:**
+Verify that the predefined package weight is stored as a string.
+
+**Steps:**
+
+1. Define a variable storing the package weight as text `"4.2"`.
+2. Print the value using `print()`.
+3. Use `type()` to display the variable data type.
+
+**Expected Result**
+
+```
+4.2 <class 'str'>
+```
+
+---
+
+## Test Case 2 — Verify conversion to float
+
+**Test Case ID:** WT-001-02
+
+**Description:**
+Verify that the text value `"4.2"` converts correctly to float.
+
+**Steps:**
+
+1. Convert the string weight using `float()`.
+2. Store result in a new variable.
+3. Print the converted value.
+4. Use `type()` to confirm data type.
+
+**Expected Result**
+
+```
+4.2 <class 'float'>
+```
+
+---
+
+# 7. Expected Final Program Output
+
+```
+4.2 <class 'str'>
+4.2 <class 'float'>
+```
+
+---
+
+# 8. Pass / Fail Criteria
+
+| Condition                              | Result |
+| -------------------------------------- | ------ |
+| Text value printed as string           | PASS   |
+| Converted value printed as float       | PASS   |
+| Output matches expected format         | PASS   |
+| Conversion fails or incorrect datatype | FAIL   |
+
+---
+
+# 9. Risk / Edge Case (Optional QA thinking)
+
+Possible additional tests:
+
+| Scenario         | Expected Behavior             |
+| ---------------- | ----------------------------- |
+| Weight = `"4"`   | Should convert to `4.0`       |
+| Weight = `"abc"` | Should raise conversion error |
+| Weight = `" "`   | Should fail conversion        |
+
+---
+
+# 10. Test Conclusion
+
+If the program prints:
+
+```
+4.2 <class 'str'>
+4.2 <class 'float'>
+```
+
+then the **Weight Type Converter functionality is working correctly**.
+
+---

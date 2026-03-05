@@ -1,0 +1,36 @@
+This is a defensive inventory management simulation.
+It iterates through categorized equipment, counts working and faulty items, and applies a failover strategy.
+If more than one item in a category is faulty, the entire category is replaced with a backup configuration using deepcopy to avoid shared references.
+It generates a summarized status report per category.
+
+Why deepcopy?
+
+Very important answer:
+
+If we directly assign:
+
+equipment_inventory[category] = backup_inventory
+
+Then both references point to same object in memory.
+
+Any future modification affects original backup.
+
+deepcopy() ensures independent object copy.
+
+This is pure in-memory processing:
+
+Input Data (Nested Dict)
+        ↓
+Category Loop
+        ↓
+Item Loop
+        ↓
+Status Evaluation
+        ↓
+Failover Decision Logic
+        ↓
+Deepcopy Backup Replacement
+        ↓
+Final Report Generation
+        ↓
+Console Output

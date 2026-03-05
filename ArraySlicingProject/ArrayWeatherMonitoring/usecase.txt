@@ -1,0 +1,21 @@
+Temperature Readings Organizer
+You are working for a smart weather monitoring company. The system receives daily temperature readings from a sensor. You are provided with the following 6 recorded temperatures from the past few days:
+[29.5, 30.0, 28.7, 31.2, 32.0, 29.8]
+
+Your task is to store these readings in an array and perform the following operations using proper functions:
+
+Display all the temperature values.
+
+Display only the first three readings using slicing.
+
+Display the last recorded temperature using negative indexing.
+
+
+
+Program Output:
+
+All temperatures: array('f', [29.5, 30.0, 28.700000762939453, 31.200000762939453, 32.0, 29.799999237060547])
+
+First 3 readings: array('f', [29.5, 30.0, 28.700000762939453])
+
+Last recorded temperature: 29.799999237060547

@@ -1,0 +1,178 @@
+#  Test Plan
+
+## Project: VIP Seat Management System
+
+---
+
+## 1️⃣ Objective
+
+To verify the correct creation, modification, slicing, reservation marking, and availability logic of the VIP seat management system implemented using arrays.
+
+---
+
+## 2️⃣ Scope
+
+This test plan covers:
+
+* Seat array creation (101–108)
+* Seat update operation (104 → 110)
+* Seat slicing functionality
+* Reserved seat marking logic
+* `next_available()` function validation
+
+Out of Scope:
+
+* UI testing
+* Database integration
+* Performance testing
+
+---
+
+## 3️⃣ Test Environment
+
+* Language: Python
+* Module Used: `array`
+* Data Type: Integer array (`'i'`)
+
+---
+
+# 4️⃣ Test Scenarios & Test Cases
+
+---
+
+## TC-01: Verify Seat Array Creation
+
+**Description:** Validate seats from 101 to 108 are created correctly.
+
+**Steps:**
+
+1. Create array with seat numbers 101–108
+2. Print total number of seats
+
+**Expected Result:**
+
+* Array contains 8 seats
+* Total count = 8
+* Values range from 101 to 108
+
+**Pass Criteria:** All values present and count correct
+
+---
+
+## TC-02: Verify Seat Update (104 → 110)
+
+**Description:** Validate seat replacement functionality
+
+**Steps:**
+
+1. Replace seat 104 with 110
+2. Print updated array
+
+**Expected Result:**
+
+* 104 no longer exists
+* 110 exists in array
+* Total seat count remains 8
+
+**Pass Criteria:** Update reflected correctly
+
+---
+
+## TC-03: Verify Seat Slicing
+
+**Description:** Validate slicing logic
+
+**Steps:**
+
+1. Retrieve first four seats
+2. Retrieve last three seats
+
+**Expected Result:**
+
+* First four seats returned correctly
+* Last three seats returned correctly
+
+**Pass Criteria:** Slicing matches expected order
+
+---
+
+## TC-04: Verify Reserved Seat Marking
+
+**Test Data:**
+
+```python
+reserved = array('i', [102, 106])
+```
+
+**Steps:**
+
+1. Loop through seat array
+2. Print seat status
+
+**Expected Output Example:**
+
+```
+Seat 101 - Free
+Seat 102 - Reserved
+Seat 103 - Free
+Seat 106 - Reserved
+```
+
+**Pass Criteria:**
+
+* Reserved seats marked correctly
+* All other seats marked Free
+
+---
+
+## TC-05: Verify next_available() Function
+
+**Description:** Validate seat availability logic
+
+**Input:**
+
+```
+start_seat = 105
+```
+
+**Steps:**
+
+1. Call `next_available(105, seats, reserved)`
+
+**Expected Result:**
+
+* Function returns first seat ≥ 105 that is not reserved
+* If 106 reserved → return 107
+
+**Pass Criteria:** Correct seat returned
+
+---
+
+# 5️⃣ Boundary & Edge Case Testing
+
+| Scenario                  | Expected Result             |
+| ------------------------- | --------------------------- |
+| start_seat = 108          | Return 108 if not reserved  |
+| start_seat > highest seat | Return None                 |
+| All seats reserved        | Return None                 |
+| Reserved list empty       | Return start_seat if exists |
+
+---
+
+# 6️⃣ Risks
+
+* Incorrect seat replacement logic
+* Incorrect membership check for reserved seats
+* Off-by-one slicing errors
+* Negative indexing misuse
+
+---
+
+# 7️⃣ Exit Criteria
+
+Testing is complete when:
+
+* All test cases pass
+* No functional defects remain
+* Boundary cases validated
+
