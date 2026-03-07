@@ -14,13 +14,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build Docker Image
-        run: docker build -t equipment-image ./EquipmentStatusTrackerProject
+        run: docker build -t all-projects-image .
 
       - name: Run Container
-        run: docker run equipment-image > output.txt
+        run: docker run --rm all-projects-image > output.txt
 
       - name: Upload Output Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: equipment-output
+          name: all-projects-output
           path: output.txt

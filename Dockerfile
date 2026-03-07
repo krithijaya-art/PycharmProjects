@@ -1,14 +1,19 @@
 FROM python:3.10-slim
 
-# Set working directory inside container
+# Set working directory
 WORKDIR /app
 
-# Copy all projects
+# Copy project files
 COPY . .
 
+# Make root project importable
+ENV PYTHONPATH=/app
+
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
-# Default program to run
+
+# Make script executable
 RUN chmod +x run_all.sh
 
-CMD ["./run_all.sh"]
-
+# Default command
+CMD ["bash", "run_all.sh"]
