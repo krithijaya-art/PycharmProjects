@@ -1,0 +1,49 @@
+# Shopping List Finder
+
+# Variables for shopping list items
+item1 = "Milk"
+item2 = "Eggs"
+item3 = "Bread"
+item4 = "Butter"
+item5 = "Sugar"
+
+# Variables for availability of items
+milk_available = False
+eggs_available = True
+bread_available = False
+butter_available = True
+sugar_available = True
+
+# Input for finding an item
+search_item = input("Enter the item you are searching for: ").strip().capitalize()
+
+# Logic to find the item using only if-else and logical/comparison operators
+if search_item == item1 and milk_available:
+    print(f"{item1} is available.")
+if search_item == item1 and not milk_available:
+    print(f"{item1} is not available.")
+
+if search_item == item2 and eggs_available:
+    print(f"{item2} is available.")
+if search_item == item2 and not eggs_available:
+    print(f"{item2} is not available.")
+
+if search_item == item3 and bread_available:
+    print(f"{item3} is available.")
+if search_item == item3 and not bread_available:
+    print(f"{item3} is not available.")
+
+if search_item == item4 and butter_available:
+    print(f"{item4} is available.")
+if search_item == item4 and not butter_available:
+    print(f"{item4} is not available.")
+
+if search_item == item5 and sugar_available:
+    print(f"{item5} is available.")
+if search_item == item5 and not sugar_available:
+    print(f"{item5} is not available.")
+
+if (search_item != item1 and search_item != item2
+        and search_item != item3 and search_item != item4
+        and search_item != item5):
+    print(f"{search_item} is not in the shopping list.")

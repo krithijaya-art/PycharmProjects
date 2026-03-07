@@ -1,0 +1,100 @@
+ID Missing
+
+Select any of the one following categories:
+1. To print the total count:
+2. To list all the entries line by line:
+3. Enter Employee ID to look up the record:
+4. Return the role of the employee if found:
+5. To Add a new record:
+6. To Merge salary report with employee dictionary:
+7. Exit
+Enter your choice (1-7): Total number of Employees: 3
+
+Select any of the one following categories:
+1. To print the total count:
+2. To list all the entries line by line:
+3. Enter Employee ID to look up the record:
+4. Return the role of the employee if found:
+5. To Add a new record:
+6. To Merge salary report with employee dictionary:
+7. Exit
+Enter your choice (1-7): [34m101 - Balu M (Project Manager)[0m
+[34m102 - Rajan P (Senior Analyst)[0m
+[34m103 - Mathew A (Validation Engineer)[0m
+
+Select any of the one following categories:
+1. To print the total count:
+2. To list all the entries line by line:
+3. Enter Employee ID to look up the record:
+4. Return the role of the employee if found:
+5. To Add a new record:
+6. To Merge salary report with employee dictionary:
+7. Exit
+Enter your choice (1-7): Enter Employee ID: 
+[32mEmployee found:[0m
+[34m101 Balu M Project Manager[0m
+
+Select any of the one following categories:
+1. To print the total count:
+2. To list all the entries line by line:
+3. Enter Employee ID to look up the record:
+4. Return the role of the employee if found:
+5. To Add a new record:
+6. To Merge salary report with employee dictionary:
+7. Exit
+Enter your choice (1-7): Enter Employee ID: [31mEmployee not found[0m
+
+Select any of the one following categories:
+1. To print the total count:
+2. To list all the entries line by line:
+3. Enter Employee ID to look up the record:
+4. Return the role of the employee if found:
+5. To Add a new record:
+6. To Merge salary report with employee dictionary:
+7. Exit
+Enter your choice (1-7): Enter Employee ID: Enter Employee Name: Enter Employee Role: 
+[32mEmployee added![0m
+
+Select any of the one following categories:
+1. To print the total count:
+2. To list all the entries line by line:
+3. Enter Employee ID to look up the record:
+4. Return the role of the employee if found:
+5. To Add a new record:
+6. To Merge salary report with employee dictionary:
+7. Exit
+Enter your choice (1-7): {
+    "emp1": {
+        "id": "101",
+        "name": "Balu M",
+        "role": "Project Manager",
+        "salary": 200000
+    },
+    "emp2": {
+        "id": "102",
+        "name": "Rajan P",
+        "role": "Senior Analyst",
+        "salary": 300000
+    },
+    "emp3": {
+        "id": "103",
+        "name": "Mathew A",
+        "role": "Validation Engineer",
+        "salary": 150000
+    },
+    "emp4": {
+        "id": "104",
+        "name": "Krishna T",
+        "role": "Automation Engineer"
+    }
+}
+
+Select any of the one following categories:
+1. To print the total count:
+2. To list all the entries line by line:
+3. Enter Employee ID to look up the record:
+4. Return the role of the employee if found:
+5. To Add a new record:
+6. To Merge salary report with employee dictionary:
+7. Exit
+Enter your choice (1-7): Exiting the Employee dictionary. Have a great day!
