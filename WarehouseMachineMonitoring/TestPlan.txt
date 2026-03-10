@@ -1,0 +1,65 @@
+Test Plan – Warehouse Machine Temperature Monitoring
+1. Objective
+
+The purpose of this test is to verify that the Python program correctly determines the machine status (OK, Cooling Needed, or Stop Immediately) based on the machine temperature using only if and else conditions.
+
+2. Test Environment
+
+Programming Language: Python 3
+
+Platform: Local system / terminal
+
+Input: Temperature value stored in a variable
+
+Output: Status message printed to the screen
+
+3. Temperature Logic Used in Program
+Temperature Range	Status
+≤ 70°C	OK
+71 – 90°C	Cooling Needed
+> 90°C	Stop Immediately
+4. Test Cases
+Test Case ID	Temperature Input	Expected Output	Actual Output	Result
+TC01	60	Machine Status: OK	Machine Status: OK	Pass
+TC02	80	Machine Status: Cooling Needed	Machine Status: Cooling Needed	Pass
+TC03	95	Machine Status: Stop Immediately	Machine Status: Stop Immediately	Pass
+TC04	70	Machine Status: OK	Machine Status: OK	Pass
+TC05	90	Machine Status: Cooling Needed	Machine Status: Cooling Needed	Pass
+5. Sample Python Program
+# Store the machine temperature
+temperature = 80
+
+# Decision using if and else
+if temperature > 90:
+    status = "Stop Immediately"
+else:
+    if temperature > 70:
+        status = "Cooling Needed"
+    else:
+        status = "OK"
+
+# Print machine status
+print("Machine Temperature:", temperature)
+print("Machine Status:", status)
+6. Sample Outputs
+Test 1
+
+Temperature = 60
+
+Machine Temperature: 60
+Machine Status: OK
+Test 2
+
+Temperature = 80
+
+Machine Temperature: 80
+Machine Status: Cooling Needed
+Test 3
+
+Temperature = 95
+
+Machine Temperature: 95
+Machine Status: Stop Immediately
+7. Conclusion
+
+The program correctly evaluates the machine’s temperature and prints the appropriate status message using only if and else conditions. All test cases passed successfully.

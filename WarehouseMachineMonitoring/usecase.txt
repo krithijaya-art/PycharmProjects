@@ -1,0 +1,1 @@
+You are monitoring a warehouse machine and must decide if it’s OK, Cooling Needed, or Stop Immediately based on its temperature. Your program should use only if and else conditions to make the decision.

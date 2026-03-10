@@ -1,0 +1,11 @@
+# A long string
+text = "Python is a powerful programming language that is easy to learn."
+
+# Using the 'in' operator to check for a word
+if "programming" in text:
+    print("The word 'programming' is found in the text!")  # This will print
+
+if "Java" not in text:
+    print("The word 'Java' is found in the text!")
+else:
+    print("The word 'Java' is not found in the text!")  # This will print

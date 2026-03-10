@@ -1,0 +1,20 @@
+# Program: Attendance Status Checker
+
+# Step 1: Get the number of total classes and attended classes.
+total_classes = int(input("Enter the total number of classes: "))
+attended_classes = int(input("Enter the number of classes attended: "))
+
+# Step 2: Validate inputs to ensure they are logical.
+if total_classes <= 0 or attended_classes < 0 or attended_classes > total_classes:
+    print("Invalid input. Please check the numbers you entered.")
+
+# Step 3: Calculate attendance percentage and determine status/messages.
+attendance_percentage = (attended_classes / total_classes) * 100 if total_classes > 0 else 0
+status = "Allowed to sit in exams" if attendance_percentage >= 75 else "Not allowed to sit in exams"
+message = "Keep up the good work!" if attendance_percentage >= 75 else "Please improve your attendance."
+
+# Step 4: Output results if inputs are valid.
+if total_classes > 0 and attended_classes >= 0 and attended_classes <= total_classes:
+    print(f"Attendance Percentage: {attendance_percentage:.2f}%")
+    print(f"Status: {status}")
+    print(f"Note: {message}")

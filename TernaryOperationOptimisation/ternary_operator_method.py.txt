@@ -1,0 +1,12 @@
+guests = 12
+
+if guests > 10:
+    cake = "Large Cake"
+else:
+    cake = "Small Cake"
+
+print(cake)
+--------------------------------------------------
+cake = "Large Cake" if guests > 10 else "Small Cake"
+
+print(cake)

@@ -1,0 +1,26 @@
+Power Tool Safety Lock
+You are programming the logic for a basic power tool safety lock system.
+
+Your task is to:
+
+Create two variables:
+
+power_switch with value "on"
+
+pin_code with value 999
+
+Write an if-else statement that:
+
+Checks if power_switch is "on"
+
+And if pin_code is equal to 999
+
+If both conditions are true, print: "Tool activated. Proceed with caution."
+Otherwise, print: "Safety lock engaged. Tool disabled."
+
+
+
+Program Output:
+
+Tool activated. Proceed with caution.
+
