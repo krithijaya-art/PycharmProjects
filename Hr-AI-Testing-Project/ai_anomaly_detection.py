@@ -10,7 +10,7 @@ PyTorch to simulate automated validation of payroll data.
 '''
 
 # Import required libraries
-from pathlib import path
+from pathlib import Path
 import pandas as pd
 import torch
 import torch.nn as nn
