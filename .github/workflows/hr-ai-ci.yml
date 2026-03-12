@@ -1,7 +1,7 @@
 name: HR AI Project CI
 
 on: 
-  push
+push:
     branches:
       - Main
       - main
