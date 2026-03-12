@@ -25,3 +25,6 @@ jobs:
         with:
           name: all-projects-output
           path: output.txt
+
+      - name: Run pytest directly
+        run: pytest -v
