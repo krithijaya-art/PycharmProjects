@@ -10,6 +10,7 @@ PyTorch to simulate automated validation of payroll data.
 '''
 
 # Import required libraries
+from pathlib import path
 import pandas as pd
 import torch
 import torch.nn as nn
@@ -31,6 +32,7 @@ import torch.optim as optim
 # -------------------------------------
 # Step 1: Load Historical HR dataset
 # -------------------------------------
+BASE_DIR = Path(__file__).resolve().parent
 df = pd.read_csv("hr_data.csv")
 
 # convert to tensor for AI model
