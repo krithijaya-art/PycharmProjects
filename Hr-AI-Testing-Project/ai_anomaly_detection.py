@@ -33,7 +33,8 @@ import torch.optim as optim
 # Step 1: Load Historical HR dataset
 # -------------------------------------
 BASE_DIR = Path(__file__).resolve().parent
-df = pd.read_csv("hr_data.csv")
+datafile = BASE_DIR / "hr_data.csv"
+df = pd.read_csv(datafile)
 
 # convert to tensor for AI model
 data = torch.tensor(df.values, dtype=torch.float)
