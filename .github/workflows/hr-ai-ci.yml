@@ -1,9 +1,10 @@
 name: HR AI Project CI
 
-on: push
-branches:
-  - Main
-  - main
+on: 
+  push
+    branches:
+      - Main
+      - main
 
 jobs:
   test:
